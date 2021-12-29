@@ -61,7 +61,7 @@ end
 client.message_command("拾い画チェック") do |interaction, message|
   images = message.attachments.filter { |a| a.content_type.start_with?("image") }
   if images.length == 0
-    next interaction.post("画像が添付されていません。", ephimeral: true)
+    next interaction.post("画像が添付されていません。", ephemeral: true)
   end
   interaction.post("#{images.length} 個のファイルをチェックしています。", ephemeral: true)
   embeds = check_images(images)
