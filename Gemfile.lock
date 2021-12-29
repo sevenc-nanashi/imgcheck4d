@@ -32,6 +32,7 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.6)
+    ffi (1.15.4)
     ffi (1.15.4-x86-mingw32)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -67,9 +68,11 @@ GEM
     timers (4.3.3)
     unf (0.1.4)
       unf_ext
+    unf_ext (0.0.8)
     unf_ext (0.0.8-x86-mingw32)
 
 PLATFORMS
+  aarch64-linux
   x86-mingw32
 
 DEPENDENCIES
